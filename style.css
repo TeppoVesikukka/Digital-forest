@@ -55,3 +55,14 @@ h1 {
         color: blue;
         align-items: center;
     }
+
+.page2{ 
+        position: absolute;
+        left: 41%;
+        top: 45%;
+        text-decoration: none;
+        font-family: Courier, monospace;
+        font-size: 20pt;
+        color: blue;
+        align-items: center;
+    }
