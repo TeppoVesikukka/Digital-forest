@@ -13,14 +13,25 @@ body{
         stroke-width:1.5;
         stroke-linecap:square;
         stroke-linejoin:bevel;
+
     }
+
+.st1:hover{   
+        stroke:rgb(244, 8, 252);
+        stroke-width:2;
+        stroke-linecap:square;
+        stroke-linejoin:bevel;
+        visibility: initial;
+ 
+}
 
 .st2{   
         fill:rgba(255, 255, 255, 0);
-        stroke:#0831FC;
+        stroke:rgb(28, 252, 8);
         stroke-width:1.5;
         stroke-linecap:square;
         stroke-linejoin:bevel;
+
 }
 
 
@@ -29,10 +40,12 @@ body{
         stroke-width:2;
         stroke-linecap:square;
         stroke-linejoin:bevel;
+        display:block;
 }
 
 
 .box{   
+        display: none;
         position: absolute;
         left: 700px;
         top: 300px;

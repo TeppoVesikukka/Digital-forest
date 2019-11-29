@@ -357,7 +357,10 @@
             l-1.7,0.7l-2-0.9l-2.8,0.6l-0.3,1.6l2.6,3.1l0.1,1.9l-5.3,2.1l-8.5-1.1l-2-5.9l-2.3,1.8l-2.2-0.7l-6.1,9.3l-4.5,1.3l-12.2-1.2
             L456.1,257.4"/>
     </g>
-    </svg>
+</svg>
+
+
+
     
 <div class="box">
     <h3>Heading</h3>
@@ -372,7 +375,7 @@ $(".st2").click(function(e){
 
   var maakunta = $(this).parent().attr("id");
   console.log(e.pageX, e.pageY)
-    $(".box").slideToggle(400).css({"top": e.pageY+20, "left": e.pageX+5})
+    $(".box").slideToggle(400).css({"display": "block", "top": e.pageY+20, "left": e.pageX+5})
 });
 
 </script>
