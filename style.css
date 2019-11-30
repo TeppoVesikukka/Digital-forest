@@ -2,6 +2,15 @@
 
 body{
     background-color: rgb(228, 228, 228);
+      
+}
+.body1{
+    background-color: rgb(228, 228, 228);
+    background-image: url('blue');
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+      
 }
 
 .st0 {  
@@ -85,22 +94,22 @@ h1 {    padding:10px;
 
 .page1{ 
         position: absolute;
-        left: 40%;
-        top: 40%;
+        left: 35%;
+        top: 47%;
         text-decoration: none;
         font-family: 'Courier New', Courier, monospace;
-        font-size: 40pt;
-        color: blue;
+        font-size: 50pt;
+        color: whitesmoke;
         align-items: center;
     }
 
 .page2{ 
         position: absolute;
-        left: 41%;
-        top: 45%;
+        left: 38%;
+        top: 53%;
         text-decoration: none;
         font-family: Courier, monospace;
         font-size: 20pt;
-        color: blue;
+        color: whitesmoke;
         align-items: center;
     }
