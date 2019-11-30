@@ -18,28 +18,21 @@ body{
     }
 
 .st1 {  fill:rgba(255, 255, 255, 0);
-        stroke:#0831FC;
+        stroke:rgb(8, 49, 252);
         stroke-width:1.5;
         stroke-linecap:square;
         stroke-linejoin:bevel;
 
     }
-
-.st1:hover{   
-        stroke:rgb(244, 8, 252);
-        stroke-width:2;
-        stroke-linecap:square;
-        stroke-linejoin:bevel;
-        visibility: initial;
  
-}
 
 .st2{   
         fill:rgba(255, 255, 255, 0);
-        stroke:#0831FC;
+        stroke:rgba(8, 49, 252, 0);
         stroke-width:1.5;
         stroke-linecap:square;
         stroke-linejoin:bevel;
+        
 
 }
 
