@@ -11,12 +11,19 @@
 
 <div class="page0">   
         <p class="page1">DigiMetsä</p>
-        <p class="page2">Metsää numeroina</p>
+        <p class="page2">Metsästä dataa</p>
 </div>
 
 <div id="hide" class="box1">
-    <p id="box1">Tämä on Digimetsä nettisivut jossa on visualisoituna numeroita metsästä</p>
+    <p id="box1">Digimetsä on metsä dataa visualisoituna. Projektin tarkoituksena on kerätä yksille sivuille erilaisista lähteistä tietoa metsästä ja metsän käytöstä.</p>
 </div>
+
+<div id="hide" class="box2">
+    </div>
+
+<div id="hide" class="box3">
+    <p></p>
+    </div>
    
 
 <svg id="hide2" class = "posit1"   
@@ -485,7 +492,12 @@ $(".st2").click(function(e){
 $( ".page0" ).click(function() {
         $( ".page1" ).animate({ left: "30px", top: "5px" }, "slow" );
         $( ".page2" ).animate({ left: "30px", top: "130px" }, "slow" );
-        $( "#hide" ).show("slow");
+        $( "#hide, #hide" ).show("slow");
+
+});
+$( ".box2" ).click(function() {
+ $( "#hide2" ).slideToggle("slow");
+
 });
 
 
