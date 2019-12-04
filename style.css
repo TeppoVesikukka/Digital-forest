@@ -1,7 +1,7 @@
 /*  Landing page    */
 
 body{
-    background-color: rgb(228, 228, 228);
+    background-color: rgb(0, 0, 0);
       
 }
 .body1{
@@ -61,36 +61,37 @@ body{
         width: 250px;
         height: 700px;
         left: 5px;
-        top: 5px%;
+        top: 250px;
         border: 4px solid black;
-        background-color: whitesmoke;
+
 }
 
-h1 {    padding:10px;
-        font-family: 'Courier New';
-        text-decoration: none;
-        font-size: 30pt;
-        color: rgb(0, 0, 0);
-
-    }  
+  
 
         /*  SVG */
         
 .posit1{
-        background-color: rgb(226, 226, 226);
+        background-color: rgba(226, 226, 226, 0);
         border: 2px solid black;
        position: absolute;
        left: 350px;
+       top: 250px;
     }
 
         /*  main page   */
 
+h1 {    padding:10px;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-size: 30pt;
+    color: rgb(255, 255, 255);
 
+}
 
 .page1{ 
         position: absolute;
         left: 35%;
-        top: 47%;
+        top: 30%;
         text-decoration: none;
         font-family: 'Courier New', Courier, monospace;
         font-size: 50pt;
@@ -101,9 +102,9 @@ h1 {    padding:10px;
 .page2{ 
         position: absolute;
         left: 38%;
-        top: 53%;
+        top: 50%;
         text-decoration: none;
-        font-family: Courier, monospace;
+        font-family: 'Courier New', Courier, monospace;
         font-size: 20pt;
         color: whitesmoke;
         align-items: center;
