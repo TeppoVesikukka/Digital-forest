@@ -5,17 +5,21 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
+
+
 <body class="body1">
 
-<a class="page1" href="Digiforest.html">DigiMetsä</a>
-<p class="page2">Metsää numeroina</p>
+<div class="page0">   
+        <p class="page1">DigiMetsä</p>
+        <p class="page2">Metsää numeroina</p>
+</div>
 
-<div class="box1">
+<div id="hide" class="box1">
     <h1>DigiMetsä</h1>
 </div>
    
 
-<svg class = "posit1"   
+<svg id="hide" class = "posit1"   
           width="1000" height="700"
           viewBox="0 0 830 580">
 
@@ -473,10 +477,17 @@
 
 
 $(".st2").click(function(e){
-
   var maakunta = $(this).parent().attr("id");
   console.log(e.pageX, e.pageY)
     $(".box").slideToggle(400).css({"display": "block", "top": e.pageY+20, "left": e.pageX+5})
+});
+
+$( ".page0" ).click(function() {
+        $( ".page1, .page2" ).animate({ left: "30px", top: "10px" }, "slow" );
+});
+
+$( ".page0" ).click(function() {
+        $( "#hide , #hide" ).show("slow");
 });
 
 </script>
