@@ -14,21 +14,28 @@
         <p class="page2">Metsästä dataa</p>
 </div>
 
-<div id="hide" class="box1">
-    <p id="box1">Digimetsä on dataa metsästä visualisoituna.
-                Projektin tarkoituksena on kerätä infografiikkaa ja visualisointeja metsästä
-                ja metsän käytöstä.</p>
-</div>
-
-<div id="hide" class="box2">
+<div class="grid-container">
+    <div class="item1">
+        <p>Digimetsä on dataa metsästä visualisoituna. 
+            Projektin tarkoituksena on kerätä infografiikkaa
+             ja visualisointeja metsästä
+            ja metsän käytöstä.</p>
     </div>
+    <div class="item2 box2">Kartta</div>
+    <div class="item3">...</div>
+    <div class="item4">...</div>
+    <div class="item5">...</div>
+    <div class="item6">...</div>
+    <div class="item7">...</div>
+    <div class="item8">...</div>
+    <div class="item9">...</div>
+    <div class="item10">...</div>
+    <div class="item11">...</div>
+    <div class="item12">...</div>
+    <div class="item13">...</div>
+  </div> 
 
-<div id="hide" class="box3">
-    <p></p>
-    </div>
-   
-
-<svg id="hide2" class = "posit1"   
+<svg class = "map"   
           width="800" height="580"
           viewBox="0 0 830 580">
 
@@ -375,8 +382,6 @@
             L456.1,257.4"/>
     </g>
 
-
-
     <g id="7_Ahvenanmaa">
         <path vector-effect="none" class="st2" d="M296.1,498l2.7-7.9l2.5-10.3l5.8-1.8l2.8-0.7l4.4-0.4l5-0.3l1.9-1.3l2.3-1.6l4.1-2.9
             l7,7.6l5.2,0.9l2.8,6.6l0.3,3.2l-2.3,10.6l-2,5.8l0.8,1l1,1.3l0.8,5.8l1.3,0.7l2.4,2.6l-2.3,5.3l-2.9,11.5l-9.3-2.3l-9.1,2.6
@@ -469,15 +474,9 @@
             l-1.7,0.7l-2-0.9l-2.8,0.6l-0.3,1.6l2.6,3.1l0.1,1.9l-5.3,2.1l-8.5-1.1l-2-5.9l-2.3,1.8l-2.2-0.7l-6.1,9.3l-4.5,1.3l-12.2-1.2
             L456.1,257.4"/>
     </g>
-
-
- 
 </svg>
-
-
-
     
-<div class="box">
+<div class="infobox">
     <h3>Lääni</h3>
     <p>Kuvaus</p>
     <p>101 (numeroita)</p>
@@ -488,19 +487,18 @@
 
 $(".st2").click(function(e){
   var maakunta = $(this).parent().attr("id");
-  console.log(e.pageX, e.pageY)
-    $(".box").slideToggle(400).css({"display": "block", "top": e.pageY+20, "left": e.pageX+5})
+    $(".infobox").slideToggle(400).css({"display": "block", "top": e.pageY+20, "left": e.pageX+5})
 });
 
-$( ".page0" ).click(function() {
-        $( ".page1" ).animate({ left: "30px", top: "5px" }, "slow" );
-        $( ".page2" ).animate({ left: "30px", top: "130px" }, "slow" );
-        $( "#hide, #hide" ).show("slow");
-
+$( ".page0" ).click(function(){
+        $( ".page1" ).animate({ left: "40px", top: "-40px" }, "slow" );
+        $( ".page2" ).animate({ left: "50px", top: "70px" }, "slow" );
+        $(".page0").css("cursor","default");
+        $( ".grid-container" ).css("display", "grid");
 });
-$( ".box2" ).click(function() {
- $( "#hide2" ).toggle("slow");
 
+$( ".item2" ).click(function() {
+        $( ".map" ).toggle("slow");
 });
 
 
