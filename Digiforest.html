@@ -21,23 +21,24 @@
              ja visualisointeja metsästä
             ja metsän käytöstä.</p>
     </div>
-    <div class="item2 box2">Kartta</div>
-    <div class="item3">...</div>
-    <div class="item4">...</div>
-    <div class="item5">...</div>
-    <div class="item6">...</div>
-    <div class="item7">...</div>
-    <div class="item8">...</div>
-    <div class="item9">...</div>
-    <div class="item10">...</div>
-    <div class="item11">...</div>
-    <div class="item12">...</div>
-    <div class="item13">...</div>
+    <div class="item2 navbarHead">
+            <div class="nestedItem1 navbar">Kartta</div>
+            <div class="nestedItem2 navbar">...</div>
+            <div class="nestedItem3 navbar">...</div>
+            <div class="nestedItem4 navbar">...</div>
+            <div class="nestedItem5 navbar">...</div>
+            <div class="nestedItem6 navbar">...</div>
+            <div class="nestedItem7 navbar">...</div>
+            <div class="nestedItem8 navbar">...</div>
+            <div class="nestedItem9 navbar">...</div>
+            <div class="nestedItem10 navbar">...</div>
+            <div class="nestedItem11 navbar">...</div>
+</div>
   </div> 
 
 <svg class = "map"   
-          width="800" height="580"
-          viewBox="0 0 830 580">
+          width="800" height="650"
+          viewBox="0 0 800 540">
 
           <g id="Layer_1">
                 <g>
@@ -476,7 +477,7 @@
     </g>
 </svg>
     
-<div class="infobox">
+<div class="mapInfobox">
     <h3>Lääni</h3>
     <p>Kuvaus</p>
     <p>101 (numeroita)</p>
@@ -487,7 +488,7 @@
 
 $(".st2").click(function(e){
   var maakunta = $(this).parent().attr("id");
-    $(".infobox").slideToggle(400).css({"display": "block", "top": e.pageY+20, "left": e.pageX+5})
+    $(".mapInfobox").slideToggle(400).css({"display": "block", "top": e.pageY+20, "left": e.pageX+5})
 });
 
 $( ".page0" ).click(function(){
@@ -497,7 +498,7 @@ $( ".page0" ).click(function(){
         $( ".grid-container" ).css("display", "grid");
 });
 
-$( ".item2" ).click(function() {
+$( ".nestedItem1" ).click(function() {
         $( ".map" ).toggle("slow");
 });
 
