@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Digital Forest</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
 </head>
 
 
@@ -23,7 +23,7 @@
     </div>
     <div class="item2 navbarHead">
             <div class="nestedItem1 navbar">Kartta</div>
-            <div class="nestedItem2 navbar">...</div>
+            <div class="nestedItem2 navbar">LULUCF</div>
             <div class="nestedItem3 navbar">...</div>
             <div class="nestedItem4 navbar">...</div>
             <div class="nestedItem5 navbar">...</div>
@@ -483,24 +483,8 @@
     <p>101 (numeroita)</p>
 </div>
 
-<script type="text/javascript"> 
+<script src="index.js" type="text/javascript"> 
 
-
-$(".st2").click(function(e){
-  var maakunta = $(this).parent().attr("id");
-    $(".mapInfobox").slideToggle(400).css({"display": "block", "top": e.pageY+20, "left": e.pageX+5})
-});
-
-$( ".page0" ).click(function(){
-        $( ".page1" ).animate({ left: "40px", top: "-40px" }, "slow" );
-        $( ".page2" ).animate({ left: "50px", top: "70px" }, "slow" );
-        $(".page0").css("cursor","default");
-        $( ".grid-container" ).css("display", "grid");
-});
-
-$( ".nestedItem1" ).click(function() {
-        $( ".map" ).toggle("slow");
-});
 
 
 </script>
