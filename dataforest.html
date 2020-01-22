@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+    
+    var width = 25;
+    var barSpace = 10;
+    var marginLeft =100;
+    var bottomLine = 300;
+
+
+    d3.csv("data/Luke_Hakkuut_1981_2019.csv").then(function (data) {
+
+        console.log(data)
+        
+        var canvas = d3.select("body")
+            .append("svg")
+            .attr("width", 4300)
+            .attr("height", 800)
+
+        canvas.selectAll("rect")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("x", function (d,i) {return marginLeft + i * (width + barSpace)})
+            .attr("y", function (d,i) {return (bottomLine - d[2018] *3)})
+            .attr("width", width)
+            .attr("height", function (d,i) {return d[2018]*3 });
+    });
+
+    </script>
+    
+</body>
+</html>
